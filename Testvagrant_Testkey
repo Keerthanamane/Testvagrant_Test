@@ -1,0 +1,64 @@
+// #include stdio.h
+void main()
+{
+  
+      float total1, total2,total3,total4, GST1, GST2, GST3, GST4;
+      char large[15];
+        public: LeatherWallet(1100,1, 0.18);
+                Umbrella(900, 4, 0.12);
+                Cigarette(200, 3, 0.28);
+                Honey(100,2, 0.0);
+  
+   float  grand_total = total1 + total2 + total3 + total4;
+
+   if(GST1>(GST2 && GST3 && GST4)){  large[16] = "LeatherWallet";}
+   else if (GST2>(GST1 && GST3 && GST4)){ large[15] = "Umbrella";}
+   else  if (GST3>(GST1 && GST2 && GST4)){ large[15] = "Cigarette";}
+   else large[15]= "Honey";
+
+    printf("The product for which  maximum GST amount is ", large);
+
+   printf("The total amount to  paid to the shopkeeper is",grand_total," Rupees" );
+
+};
+
+ float LeatherWallet(int price, int quantity, float GST1)
+ {
+   int  unit_total = price*quantity;
+   int  total1 = unit_total + GST1;
+   if(price > 500){
+    total1  = total1 -(total1*0.05);
+   }
+   return total1;
+ }
+
+   float Umbrella(int price, int quantity, float GST2)
+ {
+   int  unit_total = price*quantity;
+   int  total2 = unit_total + GST2;
+   if(price > 500){
+    total2  = total2 -(total2*0.05);
+   }
+   return total2;
+
+ }
+  float Cigarette(int price, int quantity, float GST3)
+ {
+   int  unit_total = price*quantity;
+   int  total3 = unit_total + GST3;
+   if(price > 500){
+    total3  = total3 -(total3*0.05);
+   }
+   return total3;
+
+ }
+  float Honey(int price, int quantity, float GST4)
+ {
+   int  unit_total = price*quantity;
+   int  total4 = unit_total + GST4;
+   if(price > 500){
+    total4  = total4 -(total4*0.05);
+   }
+   return total4;
+
+ }
